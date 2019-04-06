@@ -13,5 +13,5 @@ def list_admin_with_pk(*fields):
 admin.site.register(Category, list_admin_with_pk('name'))
 admin.site.register(Product, list_admin_with_pk('name'))
 admin.site.register(ProductPhoto, list_admin_with_pk('product'))
-admin.site.register(Order, list_admin_with_pk('user', 'phone', 'address'))
+admin.site.register(Order, list_admin_with_pk('user', 'products' 'phone', 'address'))
 admin.site.register(RegistrationToken, RegistrationTokenAdmin)
