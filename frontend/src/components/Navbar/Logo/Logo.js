@@ -1,7 +1,8 @@
 import React from 'react';
+import './Logo.css'
 
 const Logo = () => (
-    <h4>LOGO</h4>
+    <h4>FC FANATIC</h4>
 );
 
 
