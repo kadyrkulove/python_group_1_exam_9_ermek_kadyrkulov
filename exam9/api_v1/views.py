@@ -159,6 +159,14 @@ class UserCreateView(CreateAPIView):
         token = self.create_token()
         self.send_registration_email(user, token)
 
+    def create_token(self):
+        return RegistrationToken.objects.create(user=user)
+
+    def send_registration_email(self, user, token):
+        url = '%s/register/activate/?token=%s' % (settings.HOST_URL, token)
+        email_text = "Your account was successfully created.\nPlease, follow the link to activate:\n\n%s" % url
+        user.email_user("Registration at Cinema-App", email_text, settings.EMAIL_DEFAULT_FROM)
+
 
 class CategoryViewSet(BaseViewSet):
     queryset = Category.objects.active().order_by('-name')
