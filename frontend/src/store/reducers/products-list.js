@@ -1,6 +1,4 @@
-// import axios, {PRODUCTS_URL} from "../../api-urls"
-
-import {PRODUCT_LIST_REQUEST_SUCCESS} from "../actions/products-list";
+import {PRODUCT_LIST_REQUEST_SUCCESS} from "../actions/product-list";
 
  const initialState = {
     products: [],
@@ -15,4 +13,4 @@ import {PRODUCT_LIST_REQUEST_SUCCESS} from "../actions/products-list";
     }
 };
 
- export default productsListReducer;
+export default productsListReducer;

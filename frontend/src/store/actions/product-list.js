@@ -1,5 +1,6 @@
 import axios, {PRODUCTS_URL} from "../../api-urls";
 
+
 export const PRODUCT_LIST_REQUEST_SUCCESS = "PRODUCT_LIST_REQUEST_SUCCESS";
 
 export const loadProducts = () => {
