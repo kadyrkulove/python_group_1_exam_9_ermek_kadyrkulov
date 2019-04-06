@@ -14,8 +14,8 @@ class ProductsList extends Component {
         return <Fragment>
             <div className='row'>
                 {this.props.products.map(products=> {
-                    return <div className ='col-xs-12 col-sm-6 col-lg-4' key={product.id}>
-                        <ProductCard product={product}/>
+                    return <div className ='col-xs-12 col-sm-6 col-lg-4' key={products.id}>
+                        <ProductCard product={products}/>
                     </div>
                 })}
             </div>
@@ -28,4 +28,4 @@ const mapDispatchToProps = (dispatch) => ({
     loadProducts: () => dispatch(loadProducts())
 });
 
-export default connect(mapStateToProps(), mapDispatchToProps)(ProductsList);
+export default connect(mapStateToProps, mapDispatchToProps)(ProductsList);

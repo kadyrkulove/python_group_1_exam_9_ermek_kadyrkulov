@@ -9,10 +9,8 @@ import rootReducer from './store/reducers/root'
 import {Provider} from 'react-redux'
 import thunkMiddleware from 'redux-thunk';
 
-// TODO: убрать, как только все запросы "переедут" в actions.js
 import axios from 'axios';
 import {BASE_URL} from "./api-urls";
-// задаем дефолтный baseURL, чтобы при axios-запросах его не прописывать
 axios.defaults.baseURL = BASE_URL;
 
 
@@ -23,7 +21,4 @@ ReactDOM.render(
     document.getElementById('root')
 );
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
 serviceWorker.unregister();
