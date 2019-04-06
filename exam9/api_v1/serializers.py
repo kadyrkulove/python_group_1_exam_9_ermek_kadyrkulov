@@ -104,7 +104,7 @@ class InlineProductPhotoSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = ProductPhoto
-        fields = ("id", "product")
+        fields = ("id", "photo")
 
 class InlineProductSerializer(serializers.ModelSerializer):
 

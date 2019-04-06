@@ -2,7 +2,7 @@ import React, {Fragment, Component} from 'react';
 import {connect} from "react-redux"
 
 import {loadProducts} from "../../store/actions/products-list";
-
+import ProductCard from "../../components/ProductCard/ProductCard";
 
 class ProductsList extends Component {
 
