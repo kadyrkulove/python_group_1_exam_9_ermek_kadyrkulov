@@ -1,4 +1,4 @@
-import axios, {PRODUCTS_URL} from "../../api-urls"
+// import axios, {PRODUCTS_URL} from "../../api-urls"
 
 import {PRODUCT_LIST_REQUEST_SUCCESS} from "../actions/products-list";
 
